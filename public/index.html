@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app="processTracker" lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- building responsive website, want the width to be equal to the device's native width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Process Tracker</title>
+
+    <!-- Flotilla Custom -->
+    <link href="assets/css/process-tracker.css" rel="stylesheet">
+
+    <!-- Angular -->
+    <script src="libs/angular/angular.js"></script>
+    <script src="libs/angular-route/angular-route.js"></script>
+
+    <!-- Lodash -->
+    <script src="libs/lodash/dist/lodash.js"></script>
+
+    <!-- Angular Custom -->
+    <script src="assets/globals/lodash.factory.js"></script>
+    <script src="assets/app.module.js"></script>
+    <script src="assets/app.routes.js"></script>
+    <script src="assets/components/navbar/navbar.directive.js"></script>
+
+    <script src="assets/components/home/home.controller.js"></script>
+</head>
+<body>
+<div>
+    <!-- Navbar -->
+    <navbar-directive></navbar-directive>
+
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <ng-view></ng-view>
+    </div>
+</div>
+</body>
+</html>

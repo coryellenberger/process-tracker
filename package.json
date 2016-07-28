@@ -1,0 +1,50 @@
+{
+  "name": "flotilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "gulp bower",
+    "start": "node server.js",
+    "test": "standard && gulp test"
+  },
+  "standard": {
+    "ignore": [
+      "public/libs/**"
+    ],
+    "globals": [
+      "angular",
+      "it",
+      "describe",
+      "beforeEach",
+      "inject",
+      "spyOn",
+      "expect",
+      "browser"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coryellenberger/flotilla.git"
+  },
+  "author": "Cory Ellenberger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coryellenberger/flotilla/issues"
+  },
+  "homepage": "https://github.com/coryellenberger/flotilla#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "standard": "^7.1.2"
+  }
+}
