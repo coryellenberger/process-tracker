@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/coryellenberger/process-tracker.svg?branch=master)](https://travis-ci.org/coryellenberger/process-tracker) [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
-
+AngularJS Style Guide: https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md
 
 #### Initializing Project
 This will install all of the node modules for this project

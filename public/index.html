@@ -9,6 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Process Tracker</title>
+    <!-- PureCSS -->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/marketing-old-ie.css">
+    <![endif]-->
+
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="assets/css/marketing.css">
+    <!--<![endif]-->
 
     <!-- Flotilla Custom -->
     <link href="assets/css/process-tracker.css" rel="stylesheet">
@@ -24,19 +42,24 @@
     <script src="assets/globals/lodash.factory.js"></script>
     <script src="assets/app.module.js"></script>
     <script src="assets/app.routes.js"></script>
-    <script src="assets/components/navbar/navbar.directive.js"></script>
-
+    <script src="assets/components/models/process.factory.js"></script>
+    <script src="assets/shared/storage.factory.js"></script>
     <script src="assets/components/home/home.controller.js"></script>
+    <script src="assets/components/my-process/my-process.controller.js"></script>
+
 </head>
 <body>
-<div>
-    <!-- Navbar -->
-    <navbar-directive></navbar-directive>
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="#/">Process Tracker</a>
 
-    <!-- ANGULAR DYNAMIC CONTENT -->
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <ng-view></ng-view>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#/myprocess" class="pure-menu-link">My Processes</a></li>
+        </ul>
     </div>
 </div>
+
+    <ng-view></ng-view>
+
 </body>
 </html>

@@ -15,6 +15,11 @@
         controller: 'HomeController'
       })
 
+      .when('/myprocess', {
+        templateUrl: 'assets/components/my-process/my-process.view.html',
+        controller: 'MyProcessController'
+      })
+
       .otherwise('/')
   }
 })()

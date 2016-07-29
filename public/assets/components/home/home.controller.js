@@ -6,6 +6,5 @@
   HomeController.$inject = ['$scope']
 
   function HomeController ($scope) {
-    $scope.people = ['herp', 'derp']
   }
 })()
